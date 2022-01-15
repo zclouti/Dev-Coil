@@ -78,6 +78,7 @@ class Ring():
     def Print(self) -> None:
         print(self.toString())
 
+    #comparison operator definitions
     def __lt__(self, i_other_ring) -> bool:
         return self.getTotalCoef() < i_other_ring.getTotalCoef()
 
@@ -89,5 +90,3 @@ class Ring():
 
     def __nq__(self, i_other_ring) -> bool:
         return self.getTotalCoef != i_other_ring.getTotalCoef()
-
-
